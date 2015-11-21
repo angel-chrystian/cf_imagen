@@ -87,9 +87,9 @@ component accessors=true {
 /**@Displayname Save
  * Saves the instantiated image to disk
  * @name.hint       The name of the image if omitted the name especified in the init function will be used.
- * @directory       The directory where the image will be saved, if omitted the directory specified in the init function will be used.
+ * @directory.hint  The directory where the image will be saved, if omitted the directory specified in the init function will be used.
  * @quality.hint    The quality of the saved image valid only for jpg values from 0..1, 0 lowest quality and 1 the max quality.
- * @overwrite       If true the image will be overwritten if an image with the same name already exists in disc.
+ * @overwrite.hint  If true the image will be overwritten if an image with the same name already exists in disc.
  **/
    public any function save( string name = '',
                              string directory = '',
@@ -130,7 +130,7 @@ component accessors=true {
  * @accept.hint          Type of image accepted
  * @thumbnail.hint       If true a thumbnail of the image will be created along with the uploaded image <name>_thumb.<extension>
  **/
-    public any function upload( string fileField,
+    public any function upload( required string fileField,
                                 string destination,
                                 string nameConflict = 'overwrite',
                                 string accept="image/jpg,image/jpeg,image/gif,image/png,application/pdf",
@@ -181,11 +181,11 @@ component accessors=true {
  * @width.hint  Width of the thumbnail
  * @height.hint Height of the thumbnail
  **/
-    public any function createThumbnail( numeric width
-                                         numeric height ){
+    public any function createThumbnail( numeric width,
+                                         numeric height,
+                                         numeric ratio = 1.618 ){
     	var thumbWidth = '';
         var thumbHeight = '';
-        var RATIO = 1.618; //The number ratio to get the size of the thumbnail from the image instance size
 
     	//Create a copy of the instanced image
     	var thumb = ImageNew( variables.imageInstance );
