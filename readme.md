@@ -1,7 +1,7 @@
 #cf_imagen
 
-This component creates an image or modifies an existing one
-It can convert from 1 to 999999999
+This component creates an image or modifies an existing one, uploads, resize, create thumanails and watermarks.
+
 
 ##LICENSE
 The MIT License (MIT)
@@ -12,9 +12,10 @@ The MIT License (MIT)
 - https://github.com/angel-chrystian/cf_imagen
 
 **Documentation**
-Spanish
-- http://elangelito.mx/librerias/cf_imagen
-English see the wiki in github.
+- Spanish
+   - http://elangelito.mx/librerias/cf_imagen 
+- English see the wiki on github.
+   - https://github.com/angel-chrystian/cf_imagen/wiki
 
 ##SYSTEM REQUIREMENTS
 - Railo 4+
@@ -22,7 +23,7 @@ English see the wiki in github.
 - ColdFusion 10+
 
 # INSTRUCTIONS
-Just drop into accesible folder in your server
+Just drop into accesible folder in your server or create a mapping.
 
 ## Features
 With an image you can
