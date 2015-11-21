@@ -26,6 +26,7 @@ Just drop into accesible folder in your server
 
 ## Features
 With an image you can
+
 1. Upload
 2. Resize
 3. Rename
