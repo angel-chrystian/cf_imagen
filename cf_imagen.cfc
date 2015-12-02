@@ -213,6 +213,11 @@ component accessors=true {
     	                 thumbHeight,
     	                 'highestQuality' );
 
+    	//In case the directory of thumbs changed created if not exists
+        if( not directoryExists( variables.directory ) ){
+            directoryCreate( variables.directory );
+        }
+
     	//Write to disk
     	imageWrite( thumb, '#variables.directory##thumbName#', 1, true );
 
