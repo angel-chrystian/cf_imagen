@@ -1,7 +1,7 @@
 {
     "name":"cf_imagen",
-    "version":"1.0.0",
-    "author":"Angel Chrystian <angel@elangelito.mx>",
+    "version":"1.1.0",
+    "author":"Angel Chrystian Torres<angel@elangelito.mx>",
     "slug":"cf_imagen",
     "type":"modules",
     "homepage":"https://github.com/angel-chrystian/cf_imagen",
@@ -28,6 +28,7 @@
         }
     ],
     "dependencies":{
+        
     },
     "ignore":[
         "**/.*",
@@ -37,5 +38,6 @@
         "*/.md"
     ],
     "installPaths":{
+        
     }
 }
