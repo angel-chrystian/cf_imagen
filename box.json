@@ -1,0 +1,41 @@
+{
+    "name":"cf_imagen",
+    "version":"1.0.0",
+    "author":"Angel Chrystian <angel@elangelito.mx>",
+    "slug":"cf_imagen",
+    "type":"modules",
+    "homepage":"https://github.com/angel-chrystian/cf_imagen",
+    "documentation":"https://github.com/angel-chrystian/cf_imagen",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/angel-chrystian/cf_imagen"
+    },
+    "shortDescription":"Wraps some image managment functions like upload and resize",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "engines":[
+        {
+            "type":"lucee",
+            "version":">4.5"
+        },
+        {
+            "type":"adobe",
+            "version":">10"
+        }
+    ],
+    "dependencies":{
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests",
+        "apidocs",
+        "*/.md"
+    ],
+    "installPaths":{
+    }
+}
